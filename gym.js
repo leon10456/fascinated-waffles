@@ -36,14 +36,15 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-const App = () => (
+function Gym({ navigation }) {
+  return (
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>警衛室</b>
+        <b>依仁堂</b>
       </Text>
       <TouchableOpacity
-        onPress={() =>navigation.navigate('')}
+        onPress={() =>navigation.navigate('Second')}
         style={{
           width: '10%',
           backgroundColor: 'skyblue',
@@ -57,20 +58,14 @@ const App = () => (
 
     <View>
       <View style={styles.fixToText}>
-        <TouchableOpacity
-          onPress={() => Alert.alert('Left button pressed')}
-          style={{ width: '50%', backgroundColor: 'white' }}>
-          <Text style={styles.title}>
+        <Text style={{ width: '50%', backgroundColor: 'white' ,textAlign: 'center'}}>
             <b>公車</b>
           </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => Alert.alert('Left button pressed')}
-          style={{ width: '50%', backgroundColor: 'white' }}>
-          <Text style={styles.title}>
+        
+        
+          <Text style={{ width: '50%', backgroundColor: 'white' ,textAlign: 'center'}}>
             <b>到站時間</b>
           </Text>
-        </TouchableOpacity>
       </View>
     </View>
     <Separator />
@@ -136,5 +131,5 @@ const App = () => (
     <Separator />
   </SafeAreaView>
 );
-
-export default App;
+}
+export default Gym;

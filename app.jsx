@@ -11,6 +11,12 @@ import Bus9025A from './9025A-1';
 import List9025A from './9025A-2';
 import First from './firstpage';
 import Second from './second';
+import Lake from './lake';
+import Gym from './gym';
+import Backdoor from './backdoor';
+import Library from './library';
+import Sg from './sg';
+
 
 const Stack = createStackNavigator();
 
@@ -19,7 +25,7 @@ function App() {
     <NavigationContainer initialRouteName="Home">
       <Stack.Navigator>
         <Stack.Screen name="Home" component={First} />
-        <Stack.Screen name="Next" component={Second} />
+        <Stack.Screen name="Second" component={Second} />
         <Stack.Screen name="Bus133" component={Bus133} />
         <Stack.Screen name="List133" component={List133} />
         <Stack.Screen name="Bus172" component={Bus172} />
@@ -28,6 +34,11 @@ function App() {
         <Stack.Screen name="List132" component={List132} />
         <Stack.Screen name="Bus9025A" component={Bus9025A} />
         <Stack.Screen name="List9025A" component={List9025A} />
+        <Stack.Screen name="Backdoor" component={Backdoor} />
+        <Stack.Screen name="Gym" component={Gym} />
+        <Stack.Screen name="Lake" component={Lake} />
+        <Stack.Screen name="Library" component={Library}/>
+        <Stack.Screen name="Sg" component={Sg}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

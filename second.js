@@ -77,7 +77,7 @@ function Second({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Sg')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
           <b>警衛室</b>                132|3min
@@ -109,7 +109,7 @@ function Second({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Library')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
           <b>國鼎圖書館</b>         132|3min{' '}
@@ -141,7 +141,7 @@ function Second({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Library')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
           <b>中大湖</b>                132|3min
@@ -173,10 +173,40 @@ function Second({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() =>navigation.navigate('Gym')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
           <b>依仁堂</b>                 132|3min
+        </Text>
+        <Text style={styles.title}> 172|10min</Text>
+        <TouchableOpacity
+          onPress={() => Alert.alert('Left button pressed')}
+          style={{
+            width: '10%',
+            backgroundColor: 'white',
+            position: 'absolute',
+            right: 20,
+          }}>
+          <Text style={styles.title}>心</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => Alert.alert('Left button pressed')}
+          style={{
+            width: '10%',
+            backgroundColor: 'white',
+            position: 'absolute',
+            right: 20,
+            bottom: 0,
+          }}>
+          <Text style={styles.title}>加</Text>
+        </TouchableOpacity>
+      </TouchableOpacity>
+      <Separator />
+      <TouchableOpacity
+        onPress={() =>navigation.navigate('Backdoor')}
+        style={{ width: '100%', backgroundColor: 'white' }}>
+        <Text style={styles.container}>
+          <b>後門</b>                    132|3min
         </Text>
         <Text style={styles.title}> 172|10min</Text>
         <TouchableOpacity

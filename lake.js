@@ -36,14 +36,15 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-const App = () => (
+function Lake({ navigation }) {
+  return (
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>後門</b>
+        <b>中大湖</b>
       </Text>
       <TouchableOpacity
-        onPress={() =>navigation.navigate('')}
+        onPress={() =>navigation.navigate('Second')}
         style={{
           width: '10%',
           backgroundColor: 'skyblue',
@@ -136,5 +137,5 @@ const App = () => (
     <Separator />
   </SafeAreaView>
 );
-
-export default App;
+}
+export default Lake;
