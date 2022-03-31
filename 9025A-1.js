@@ -28,14 +28,15 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-const App = () => (
+function Bus9025A({ navigation }) {
+  return (
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
         <b>9025A</b>
       </Text>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('List9025A')}
         style={{
           width: 'ˇ0%',
           backgroundColor: 'yellow',
@@ -45,7 +46,7 @@ const App = () => (
         <Text style={styles.title}>發車時刻表</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() =>navigation.navigate('Home')}
         style={{
           width: '30%',
           backgroundColor: '',
@@ -140,6 +141,6 @@ const App = () => (
     </View>
     <Separator />
   </SafeAreaView>
-);
+);}
 
-export default App;
+export default Bus9025A;

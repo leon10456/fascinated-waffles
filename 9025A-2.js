@@ -29,14 +29,15 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-const App = () => (
+function List9025A({ navigation }) {
+  return (
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
         <b>9025A</b>
       </Text>
      <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() =>navigation.navigate('Bus9025A')}
         style={{
           width: '30%',
           backgroundColor: '',
@@ -104,5 +105,5 @@ const App = () => (
     
   </SafeAreaView>
 );
-
-export default App;
+}
+export default List9025A;

@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-const App = () => (
+function Second({ navigation }) {
+  return (
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
@@ -58,7 +59,7 @@ const App = () => (
     <View>
       <View style={styles.fixToText}>
         <TouchableOpacity
-          onPress={() => Alert.alert('Left button pressed')}
+          onPress={() => navigation.navigate('Home')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
             <b>依班次</b>
@@ -203,6 +204,6 @@ const App = () => (
     </View>
     <Separator />
   </SafeAreaView>
-);
+);}
 
-export default App;
+export default Second;
