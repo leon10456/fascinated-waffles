@@ -13,18 +13,22 @@ import {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: 'center',
     marginHorizontal: 16,
     backgroundColor: 'white',
   },
   background: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: 'center',
     marginHorizontal: 16,
     backgroundColor: '#DCDCDC',
   },
   title: {
     textAlign: 'center',
+  },
+  title2: {
+    textAlign: 'center',
+    fontSize:25
   },
   fixToText: {
     flexDirection: 'row',
@@ -37,11 +41,17 @@ const styles = StyleSheet.create({
 });
 const Separator = () => <View style={styles.separator} />;
 const App = () => (
-  <SafeAreaView style={styles.background}>
-    <View>
-      <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>公車動態</b>
-      </Text>
+  <SafeAreaView>
+    <Text></Text>
+    <Text></Text>
+    <View
+      style={{
+        width: '100%',
+        backgroundColor: 'skyblue',
+      }}>
+        <Text style={styles.title2}>
+          公車動態
+        </Text>
       <TouchableOpacity
         onPress={() =>navigation.navigate('')}
         style={{
@@ -61,14 +71,14 @@ const App = () => (
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>依班次</b>
+            依班次
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>依站牌</b>
+            依站牌
           </Text>
         </TouchableOpacity>
       </View>
@@ -78,12 +88,30 @@ const App = () => (
       <TouchableOpacity
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          <b>132</b>                  警衛室|3min
-        </Text>
-        <Text style={styles.title}>往中壢公車站</Text>
+          <Text></Text>
+          <Text></Text>
         <TouchableOpacity
           onPress={() => Alert.alert('Left button pressed')}
+          style={{
+            width: '100%',
+            backgroundColor: 'white',
+            position: 'absolute',
+          }}>
+          <Text style={styles.title}>往桃園高鐵站</Text>
+          <Text style={styles.title}>警衛室|3min</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => Alert.alert('Left button pressed')}
+          style={{
+            width: '20%',
+            backgroundColor: 'white',
+            position: 'absolute',
+            left: 20,
+          }}>
+          <Text style={styles.title2}>132</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => Alert.alert('Left button press')}
           style={{
             width: '10%',
             backgroundColor: 'white',
@@ -93,7 +121,7 @@ const App = () => (
           <Text style={styles.title}>心</Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => Alert.alert('Left button pressed')}
+          onPress={() => Alert.alert('Left button press')}
           style={{
             width: '10%',
             backgroundColor: 'white',
@@ -111,7 +139,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>172</b>                  警衛室|3min{' '}
+          172                  警衛室|3min{' '}
         </Text>
         <Text style={styles.title}>往桃園高鐵站</Text>
         <TouchableOpacity
@@ -143,7 +171,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>9025</b>               警衛室|3min
+          9025               警衛室|3min
         </Text>
         <Text style={styles.title}>往松山機場  </Text>
         <TouchableOpacity
@@ -175,7 +203,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>133</b>                 警衛室|3min
+          133                 警衛室|3min
         </Text>
         <Text style={styles.title}>往中壢公車站</Text>
         <TouchableOpacity

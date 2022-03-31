@@ -40,7 +40,7 @@ const App = () => (
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>公車動態</b>
+        公車動態
       </Text>
       <TouchableOpacity
         onPress={() =>navigation.navigate('')}
@@ -61,14 +61,14 @@ const App = () => (
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>依班次</b>
+            依班次
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>依站牌</b>
+            依站牌
           </Text>
         </TouchableOpacity>
       </View>
@@ -79,7 +79,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>警衛室</b>                132|3min
+          警衛室                132|3min
         </Text>
         <Text style={styles.title}> 172|10min</Text>
         <TouchableOpacity
@@ -111,7 +111,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>國鼎圖書館</b>         132|3min{' '}
+          國鼎圖書館         132|3min{' '}
         </Text>
         <Text style={styles.title}> 172|10min</Text>
         <TouchableOpacity
@@ -143,7 +143,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>中大湖</b>                132|3min
+          中大湖                132|3min
         </Text>
         <Text style={styles.title}>172|10min</Text>
         <TouchableOpacity
@@ -175,7 +175,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>依仁堂</b>                 132|3min
+          依仁堂                 132|3min
         </Text>
         <Text style={styles.title}> 172|10min</Text>
         <TouchableOpacity
