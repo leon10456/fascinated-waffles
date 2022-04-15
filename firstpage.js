@@ -40,7 +40,7 @@ const App = () => (
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>公車動態</b>
+        公車動態
       </Text>
       <TouchableOpacity
         onPress={() =>navigation.navigate('')}
@@ -61,14 +61,14 @@ const App = () => (
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>依班次</b>
+            依班次
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>依站牌</b>
+            依站牌
           </Text>
         </TouchableOpacity>
       </View>
@@ -79,7 +79,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>132</b>                  警衛室|3min
+          132                  警衛室|3min
         </Text>
         <Text style={styles.title}>往中壢公車站</Text>
         <TouchableOpacity
@@ -111,7 +111,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>172</b>                  警衛室|3min{' '}
+          172                 警衛室|3min{' '}
         </Text>
         <Text style={styles.title}>往桃園高鐵站</Text>
         <TouchableOpacity
@@ -143,7 +143,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>9025</b>               警衛室|3min
+          9025              警衛室|3min
         </Text>
         <Text style={styles.title}>往松山機場  </Text>
         <TouchableOpacity
@@ -175,7 +175,7 @@ const App = () => (
         onPress={() => Alert.alert('Left button pressed')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={styles.container}>
-          <b>133</b>                 警衛室|3min
+          133                警衛室|3min
         </Text>
         <Text style={styles.title}>往中壢公車站</Text>
         <TouchableOpacity

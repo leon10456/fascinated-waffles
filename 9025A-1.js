@@ -33,10 +33,10 @@ function Bus9025A({ navigation }) {
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>9025A</b>
+        <b>132</b>
       </Text>
       <TouchableOpacity
-        onPress={() => navigation.navigate('List9025A')}
+        onPress={() => navigation.navigate('List132')}
         style={{
           width: 'ˇ0%',
           backgroundColor: 'yellow',
@@ -64,14 +64,14 @@ function Bus9025A({ navigation }) {
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>往中央大學</b>
+            往中央大學
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>往松山機場</b>
+            往松山機場
           </Text>
         </TouchableOpacity>
       </View>
@@ -80,7 +80,7 @@ function Bus9025A({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:00</b> 
+          16:00 
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>中壢公車站</b></Text>
 
@@ -89,7 +89,7 @@ function Bus9025A({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:00</b> 
+          16:00 
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>第一銀行</b></Text>
 
@@ -98,7 +98,7 @@ function Bus9025A({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:01</b> 
+          16:01
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>第一市場</b></Text>
 
@@ -107,7 +107,7 @@ function Bus9025A({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:02</b> 
+          16:02
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>河川教育中心</b></Text>
 
@@ -116,7 +116,7 @@ function Bus9025A({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:02</b> 
+          16:02
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>舊社</b></Text>
 
@@ -125,7 +125,7 @@ function Bus9025A({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:04</b> 
+          16:04 
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>新民國中</b></Text>
 
@@ -134,7 +134,7 @@ function Bus9025A({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:04</b> 
+          16:04 
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>廣興</b></Text>
 

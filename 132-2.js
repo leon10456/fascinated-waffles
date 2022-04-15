@@ -34,7 +34,7 @@ function List132({ navigation }) {
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>132公車時刻表</b>
+        132公車時刻表
       </Text>
      <TouchableOpacity
         onPress={() => navigation.navigate('Bus132')}
@@ -49,131 +49,131 @@ function List132({ navigation }) {
     </View>
     <Separator />
      <Text style={{ textAlign: 'center', backgroundColor: 'white' }}>
-        <b>往中央大學</b>
+       往中央大學
       </Text>
     <View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>平日</b>
+           平日
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>假日</b>
+            假日
           </Text>
         
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>06:30</b>
+            06:30
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>06:20</b>
+            06:20
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>07:00</b>
+            07:00
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>07:00</b>
+            07:00
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>08:00</b>
+           08:00
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>07:20</b>
+            07:20
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>08:30</b>
+            08:30
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>08:00</b>
+            08:00
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>09:00</b>
+           09:00
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>08:20</b>
+            08:20
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>09:30</b>
+            09:30
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>09:00</b>
+            09:00
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>10:00</b>
+            10:00
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>09:20</b>
+            09:20
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>10:30</b>
+            10:30
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>10:00</b>
+            10:00
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>11:00</b>
+            11:00
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>10:20</b>
+            10:20
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>11:30</b>
+            11:30
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>11:00</b>
+            11:00
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>12:00</b>
+            12:00
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>11:20</b>
+            11:20
           </Text>   
       </View>
       <View style={styles.fixToText}>
        
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>12:25</b>
+            12:25
           </Text>
           <Text style={{ textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-            <b>12:00</b>
+            12:00
           </Text>   
       </View>
     </View>
     
     <Text style={{ textAlign: 'center', backgroundColor: 'white' }}>
-        <b>上次更新:2022/03/10</b>
+        上次更新:2022/03/10
       </Text>
     
   </SafeAreaView>

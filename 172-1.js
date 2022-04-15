@@ -33,10 +33,10 @@ function Bus172({ navigation }) {
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>172</b>
+        <b>132</b>
       </Text>
       <TouchableOpacity
-        onPress={() => navigation.navigate('List172')}
+        onPress={() => navigation.navigate('List132')}
         style={{
           width: 'ˇ0%',
           backgroundColor: 'yellow',
@@ -46,7 +46,7 @@ function Bus172({ navigation }) {
         <Text style={styles.title}>發車時刻表</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => navigation.navigate('Home')}
+        onPress={() =>navigation.navigate('Home')}
         style={{
           width: '30%',
           backgroundColor: '',
@@ -64,14 +64,14 @@ function Bus172({ navigation }) {
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>往中央大學</b>
+            往中央大學
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>往桃園高鐵站</b>
+            往桃園高鐵站
           </Text>
         </TouchableOpacity>
       </View>
@@ -80,7 +80,7 @@ function Bus172({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:00</b> 
+          16:00 
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>中壢公車站</b></Text>
 
@@ -89,7 +89,7 @@ function Bus172({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:00</b> 
+          16:00 
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>第一銀行</b></Text>
 
@@ -98,7 +98,7 @@ function Bus172({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:01</b> 
+          16:01
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>第一市場</b></Text>
 
@@ -107,7 +107,7 @@ function Bus172({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:02</b> 
+          16:02
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>河川教育中心</b></Text>
 
@@ -116,7 +116,7 @@ function Bus172({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:02</b> 
+          16:02
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>舊社</b></Text>
 
@@ -125,7 +125,7 @@ function Bus172({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:04</b> 
+          16:04 
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>新民國中</b></Text>
 
@@ -134,7 +134,7 @@ function Bus172({ navigation }) {
     <View style={styles.fixToText}>
       
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
-          <b>16:04</b> 
+          16:04 
         </Text>
         <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>廣興</b></Text>
 
