@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   
   background: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: "flex-start",
     marginHorizontal: 16,
     backgroundColor: '#DCDCDC',
   },
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-function List172({ navigation }) {
+function List9025A({ navigation }) {
   return (
   <SafeAreaView style={styles.background}>
     <View>

@@ -11,7 +11,7 @@ import {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: "flex-start",
     marginHorizontal: 16,
     backgroundColor: '#DCDCDC',
   },
@@ -33,15 +33,15 @@ function Bus133({ navigation }) {
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>133</b>
+        133
       </Text>
       <TouchableOpacity
-        onPress={() => navigation.navigate('List132')}
+        onPress={() => navigation.navigate('List133')}
         style={{
-          width: 'ˇ0%',
+          width: '40%',
           backgroundColor: 'yellow',
           position: 'absolute',
-          right: 20,
+          right: 0,
         }}>
         <Text style={styles.title}>發車時刻表</Text>
       </TouchableOpacity>
@@ -82,7 +82,7 @@ function Bus133({ navigation }) {
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
           16:00 
         </Text>
-        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>中壢公車站</b></Text>
+        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}>中壢公車站</Text>
 
     </View>
     <Separator />
@@ -91,7 +91,7 @@ function Bus133({ navigation }) {
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
           16:00 
         </Text>
-        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>第一銀行</b></Text>
+        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}>第一銀行</Text>
 
     </View>
     <Separator />
@@ -100,7 +100,7 @@ function Bus133({ navigation }) {
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
           16:01
         </Text>
-        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>第一市場</b></Text>
+        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}>第一市場</Text>
 
     </View>
     <Separator />
@@ -109,7 +109,7 @@ function Bus133({ navigation }) {
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
           16:02
         </Text>
-        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>河川教育中心</b></Text>
+        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}>河川教育中心</Text>
 
     </View>
     <Separator />
@@ -118,7 +118,7 @@ function Bus133({ navigation }) {
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
           16:02
         </Text>
-        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>舊社</b></Text>
+        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}>舊社</Text>
 
     </View>
     <Separator />
@@ -127,7 +127,7 @@ function Bus133({ navigation }) {
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
           16:04 
         </Text>
-        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>新民國中</b></Text>
+        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}>新民國中</Text>
 
     </View>
     <Separator />
@@ -136,7 +136,7 @@ function Bus133({ navigation }) {
         <Text style={{textAlign: 'center',width: '50%', backgroundColor: 'white' }}>
           16:04 
         </Text>
-        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}><b>廣興</b></Text>
+        <Text style={ {textAlign: 'center',width: '50%', backgroundColor: 'white' }}>廣興</Text>
 
     </View>
     <Separator />

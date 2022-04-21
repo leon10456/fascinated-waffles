@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   
   background: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: "flex-start",
     marginHorizontal: 16,
     backgroundColor: '#DCDCDC',
   },

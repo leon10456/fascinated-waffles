@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { CreateStackNavigator } from '@react-navigation/stack';
 import {
   StyleSheet,
   View,
   SafeAreaView,
+  ScrollView,
   Text,
   Alert,
   TouchableOpacity,
@@ -13,13 +14,13 @@ import {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: "flex-start",
     marginHorizontal: 16,
     backgroundColor: 'white',
   },
   background: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: "flex-start",
     marginHorizontal: 16,
     backgroundColor: '#DCDCDC',
   },
@@ -36,14 +37,16 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-const App = () => (
+function First({ navigation }) {
+  return (
   <SafeAreaView style={styles.background}>
+    <ScrollView style={styles.scrollView}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
         公車動態
       </Text>
       <TouchableOpacity
-        onPress={() =>navigation.navigate('')}
+        onPress={() =>Alert.alert('Left button pressed')}
         style={{
           width: '10%',
           backgroundColor: 'skyblue',
@@ -65,7 +68,7 @@ const App = () => (
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => Alert.alert('Left button pressed')}
+          onPress={() =>navigation.navigate('Second')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
             依站牌
@@ -76,10 +79,10 @@ const App = () => (
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Bus132')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          132                  警衛室|3min
+        <Text style={{textAlign: 'left'}}>
+        132                            警衛室|3min
         </Text>
         <Text style={styles.title}>往中壢公車站</Text>
         <TouchableOpacity
@@ -108,10 +111,10 @@ const App = () => (
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Bus172')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          172                 警衛室|3min{' '}
+        <Text style={{textAlign: 'left'}}>
+          172                            警衛室|3min
         </Text>
         <Text style={styles.title}>往桃園高鐵站</Text>
         <TouchableOpacity
@@ -140,10 +143,10 @@ const App = () => (
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Bus9025A')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          9025              警衛室|3min
+        <Text style={{textAlign: 'left'}}>
+          9025                          警衛室|3min
         </Text>
         <Text style={styles.title}>往松山機場  </Text>
         <TouchableOpacity
@@ -172,10 +175,10 @@ const App = () => (
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Bus133')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          133                警衛室|3min
+        <Text style={{textAlign: 'left'}}>
+          133                            警衛室|3min
         </Text>
         <Text style={styles.title}>往中壢公車站</Text>
         <TouchableOpacity
@@ -202,7 +205,9 @@ const App = () => (
       </TouchableOpacity>
     </View>
     <Separator />
+    </ScrollView>
   </SafeAreaView>
-);
+  );
+}
 
-export default App;
+export default First;

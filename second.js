@@ -5,6 +5,7 @@ import {
   StyleSheet,
   View,
   SafeAreaView,
+  ScrollView,
   Text,
   Alert,
   TouchableOpacity,
@@ -13,13 +14,13 @@ import {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: "flex-start",
     marginHorizontal: 16,
     backgroundColor: 'white',
   },
   background: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent:"flex-start",
     marginHorizontal: 16,
     backgroundColor: '#DCDCDC',
   },
@@ -39,9 +40,10 @@ const Separator = () => <View style={styles.separator} />;
 function Second({ navigation }) {
   return (
   <SafeAreaView style={styles.background}>
+    <ScrollView style={styles.scrollView}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        <b>公車動態</b>
+        公車動態
       </Text>
       <TouchableOpacity
         onPress={() =>navigation.navigate('')}
@@ -62,14 +64,14 @@ function Second({ navigation }) {
           onPress={() => navigation.navigate('Home')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>依班次</b>
+            依班次
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => Alert.alert('Left button pressed')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
-            <b>依站牌</b>
+             依站牌
           </Text>
         </TouchableOpacity>
       </View>
@@ -79,8 +81,8 @@ function Second({ navigation }) {
       <TouchableOpacity
         onPress={() => navigation.navigate('Sg')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          <b>警衛室</b>                132|3min
+        <Text style={{textAlign: 'left'}}>
+          警衛室                          132|3min
         </Text>
         <Text style={styles.title}> 172|10min</Text>
         <TouchableOpacity
@@ -111,8 +113,8 @@ function Second({ navigation }) {
       <TouchableOpacity
         onPress={() => navigation.navigate('Library')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          <b>國鼎圖書館</b>         132|3min{' '}
+        <Text style={{textAlign: 'left'}}>
+          國鼎圖書館                  132|3min{' '}
         </Text>
         <Text style={styles.title}> 172|10min</Text>
         <TouchableOpacity
@@ -141,10 +143,10 @@ function Second({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => navigation.navigate('Library')}
+        onPress={() => navigation.navigate('Lake')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          <b>中大湖</b>                132|3min
+        <Text style={{textAlign: 'left'}}>
+          中大湖                         132|3min
         </Text>
         <Text style={styles.title}>172|10min</Text>
         <TouchableOpacity
@@ -175,8 +177,8 @@ function Second({ navigation }) {
       <TouchableOpacity
         onPress={() =>navigation.navigate('Gym')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          <b>依仁堂</b>                 132|3min
+        <Text style={{textAlign: 'left'}}>
+          依仁堂                          132|3min
         </Text>
         <Text style={styles.title}> 172|10min</Text>
         <TouchableOpacity
@@ -205,8 +207,8 @@ function Second({ navigation }) {
       <TouchableOpacity
         onPress={() =>navigation.navigate('Backdoor')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
-          <b>後門</b>                    132|3min
+        <Text style={{textAlign: 'left'}}>
+          後門                             132|3min
         </Text>
         <Text style={styles.title}> 172|10min</Text>
         <TouchableOpacity
@@ -233,6 +235,7 @@ function Second({ navigation }) {
       </TouchableOpacity>
     </View>
     <Separator />
+    </ScrollView>
   </SafeAreaView>
 );}
 

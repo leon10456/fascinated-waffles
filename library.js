@@ -13,13 +13,13 @@ import {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: "flex-start",
     marginHorizontal: 16,
     backgroundColor: 'white',
   },
   background: {
     flex: 1,
-    justifyContent: 'left',
+    justifyContent: "flex-start",
     marginHorizontal: 16,
     backgroundColor: '#DCDCDC',
   },
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-function Library({ navigation }) {
+function Sg({ navigation }) {
   return (
   <SafeAreaView style={styles.background}>
     <View>
@@ -71,9 +71,9 @@ function Library({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Bus132')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
+        <Text style={{textAlign: 'left'}}>
              132                                         到達中            
         </Text>
       </TouchableOpacity>
@@ -81,9 +81,9 @@ function Library({ navigation }) {
     <Separator />
     <View>
      <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Bus172')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
+        <Text style={{textAlign: 'left'}}>
              172                                         8分鐘             
         </Text>
       </TouchableOpacity>
@@ -91,9 +91,9 @@ function Library({ navigation }) {
     <Separator />
     <View>
      <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Bus9025A')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
+        <Text style={{textAlign: 'left'}}>
              9025A                                    17:52            
         </Text>
       </TouchableOpacity>
@@ -101,9 +101,9 @@ function Library({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => navigation.navigate('Bus133')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
+        <Text style={{textAlign: 'left'}}>
             133                                         18:00            
         </Text>
       </TouchableOpacity>
@@ -111,9 +111,9 @@ function Library({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => Alert.alert('沒有即時資料')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
+        <Text style={{textAlign: 'left'}}>
              台聯大                                    18:00            
         </Text>
       </TouchableOpacity>
@@ -121,9 +121,9 @@ function Library({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('Left button pressed')}
+        onPress={() => Alert.alert('我還沒做173的')}
         style={{ width: '100%', backgroundColor: 'white' }}>
-        <Text style={styles.container}>
+        <Text style={{textAlign: 'left'}}>
              173                                         末班已過             
         </Text>
       </TouchableOpacity>
@@ -132,4 +132,4 @@ function Library({ navigation }) {
   </SafeAreaView>
 );
 }
-export default Library;
+export default Sg;
