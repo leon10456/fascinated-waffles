@@ -121,7 +121,7 @@ function Sg({ navigation }) {
     <Separator />
     <View>
       <TouchableOpacity
-        onPress={() => Alert.alert('我還沒做173的')}
+        onPress={() => navigation.navigate('Bus173')}
         style={{ width: '100%', backgroundColor: 'white' }}>
         <Text style={{textAlign: 'left'}}>
              173                                         末班已過             

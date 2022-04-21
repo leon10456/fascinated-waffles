@@ -61,7 +61,7 @@ function First({ navigation }) {
     <View>
       <View style={styles.fixToText}>
         <TouchableOpacity
-          onPress={() => Alert.alert('Left button pressed')}
+          onPress={() => navigation.navigate('Home')}
           style={{ width: '50%', backgroundColor: 'white' }}>
           <Text style={styles.title}>
             依班次

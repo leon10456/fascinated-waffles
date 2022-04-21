@@ -29,15 +29,15 @@ const styles = StyleSheet.create({
   },
 });
 const Separator = () => <View style={styles.separator} />;
-function List9025A({ navigation }) {
+function List173({ navigation }) {
   return (
   <SafeAreaView style={styles.background}>
     <View>
       <Text style={{ textAlign: 'center', backgroundColor: 'skyblue' }}>
-        9025A公車時刻表
+        173公車時刻表
       </Text>
      <TouchableOpacity
-        onPress={() => navigation.navigate('Bus9025A')}
+        onPress={() => navigation.navigate('Bus173')}
         style={{
           width: '30%',
           backgroundColor: '',
@@ -178,4 +178,4 @@ function List9025A({ navigation }) {
     
   </SafeAreaView>
 );}
-export default List9025A;
+export default List173;

@@ -16,6 +16,8 @@ import Gym from './gym';
 import Backdoor from './backdoor';
 import Library from './library';
 import Sg from './sg';
+import Bus173 from './173-1';
+import List173 from './173-2';
 
 
 const Stack = createStackNavigator();
@@ -39,6 +41,8 @@ function App() {
         <Stack.Screen name="Lake" component={Lake} />
         <Stack.Screen name="Library" component={Library}/>
         <Stack.Screen name="Sg" component={Sg}/>
+        <Stack.Screen name="Bus173" component={Bus173}/>
+        <Stack.Screen name="List173" component={List173}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
